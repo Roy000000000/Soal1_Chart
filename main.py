@@ -15,7 +15,6 @@ current_time = None
 for line in lines:
     # Cari timestamp
     if line.startswith("Timestamp:"):
-        # contoh: Timestamp: 2024-07-30 10:23:42
         ts_str = line.replace("Timestamp:", "").strip()
         current_time = datetime.strptime(ts_str, "%Y-%m-%d %H:%M:%S")
     
@@ -45,4 +44,5 @@ p.scatter(timestamps, speeds, size=6, color="red", legend_label="Data Point")
 p.legend.location = "top_left"
 
 show(p)
+
 webbrowser.open("line_chart.html")
