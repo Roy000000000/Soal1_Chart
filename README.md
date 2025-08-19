@@ -21,4 +21,4 @@ program membaca data dari file 'soal_chart_bokeh.txt' lalu menampilkan grafik (L
 
 
 
-====== Hasilnya maka akan membuat file line_chart.html
+====== Hasilnya maka akan membuat file line_chart.html dan langsung otomatis menuju ke browser ========
